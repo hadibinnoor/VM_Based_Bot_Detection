@@ -1,0 +1,50 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: bot-defense-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  ml:
+    build:
+      context: .
+      dockerfile: ml/Dockerfile
+    container_name: bot-defense-ml
+    restart: unless-stopped
+    environment:
+      ML_HOST: 0.0.0.0
+      ML_PORT: 5001
+      ML_AUTO_TRAIN_IF_MISSING: "false"
+    ports:
+      - "5001:5001"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5001/health').read()"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bot-defense-app
+    restart: unless-stopped
+    depends_on:
+      redis:
+        condition: service_healthy
+      ml:
+        condition: service_healthy
+    environment:
+      PORT: 8080
+      COOKIE_SECRET: ${COOKIE_SECRET}
+      REDIS_ADDR: redis:6379
+      ML_SERVICE_URL: http://ml:5001
+      GO_ENV: development
+    ports:
+      - "8080:8080"

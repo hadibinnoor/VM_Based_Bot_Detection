@@ -1,0 +1,10 @@
+{
+  "dataset_path": "/Users/hadibinnoor/Documents/duk/4th Sem/bot-defense/ml/data/synthetic_bot_dataset.csv",
+  "n_rows": 24000,
+  "n_train": 19394,
+  "n_test": 4606,
+  "oob_score": 0.980148499535939,
+  "auc_roc": 0.9727187847236511,
+  "cv_auc_mean": 0.9728187295356546,
+  "cv_auc_std": 0.005512485644851381
+}

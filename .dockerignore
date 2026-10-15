@@ -1,0 +1,23 @@
+.git
+.gitignore
+.DS_Store
+
+# Local env and editor artifacts
+.env
+.env.local
+.idea
+.vscode
+
+# Python local environments / caches
+ml/venv
+venv
+.venv
+**/__pycache__
+**/*.pyc
+
+# Build/test artifacts
+bin
+*.out
+*.test
+
+# Keep pretrained model in image for deterministic startup.

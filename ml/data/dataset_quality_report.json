@@ -1,0 +1,300 @@
+{
+  "dataset_path": "/Users/hadibinnoor/Documents/duk/4th Sem/bot-defense/ml/data/synthetic_bot_dataset.csv",
+  "n_rows": 24000,
+  "n_features": 27,
+  "missing_columns": [],
+  "null_counts": {},
+  "class_balance": {
+    "human": 16124,
+    "bot": 7876,
+    "human_ratio": 0.6718333333333333,
+    "bot_ratio": 0.32816666666666666
+  },
+  "feature_gaps": {
+    "mouse_moved": {
+      "mean_human": 0.7337509302902505,
+      "mean_bot": 0.3284662265109192,
+      "std_human": 0.44199604363437733,
+      "std_bot": 0.46965536785242507,
+      "ks_like": 0.4052847037793313,
+      "effect_size_abs": 0.8887131494400559
+    },
+    "mouse_x": {
+      "mean_human": 557.2922766535188,
+      "mean_bot": 481.30312330219084,
+      "std_human": 329.043178106246,
+      "std_bot": 418.6149776575727,
+      "ks_like": 0.3413738423107156,
+      "effect_size_abs": 0.20182920586985398
+    },
+    "mouse_y": {
+      "mean_human": 433.15645538616087,
+      "mean_bot": 287.64453900183383,
+      "std_human": 216.53238024325313,
+      "std_bot": 255.7099744354313,
+      "ks_like": 0.3409357696239114,
+      "effect_size_abs": 0.6141496743999532
+    },
+    "mouse_distance": {
+      "mean_human": 755.8849017665391,
+      "mean_bot": 609.4472589813782,
+      "std_human": 285.9113824710515,
+      "std_bot": 428.35605933208603,
+      "ks_like": 0.2747226012118625,
+      "effect_size_abs": 0.4021174683540722
+    },
+    "timing_count": {
+      "mean_human": 13.966027447541952,
+      "mean_bot": 4.642499236047399,
+      "std_human": 6.6259042267183155,
+      "std_bot": 5.624439006687316,
+      "ks_like": 0.5963757391137929,
+      "effect_size_abs": 1.5171050289361174
+    },
+    "timing_mean": {
+      "mean_human": 100.04356959687499,
+      "mean_bot": 16.286025967403972,
+      "std_human": 47.59048731923459,
+      "std_bot": 25.652655401081432,
+      "ks_like": 0.8046570011814229,
+      "effect_size_abs": 2.1909424492731735
+    },
+    "timing_variance": {
+      "mean_human": 465.75798984941713,
+      "mean_bot": 27.96820464626454,
+      "std_human": 223.65365227644577,
+      "std_bot": 105.84636411973887,
+      "ks_like": 0.9307178029489335,
+      "effect_size_abs": 2.5021786910234334
+    },
+    "timing_min": {
+      "mean_human": 65.38127973132305,
+      "mean_bot": 12.417347711500105,
+      "std_human": 46.873424965324915,
+      "std_bot": 20.780224053996893,
+      "ks_like": 0.611553124534225,
+      "effect_size_abs": 1.4608486950910686
+    },
+    "timing_max": {
+      "mean_human": 139.72734242986846,
+      "mean_bot": 21.108645922779644,
+      "std_human": 52.302464645840516,
+      "std_bot": 32.932465914624096,
+      "ks_like": 0.9064897501448588,
+      "effect_size_abs": 2.714132570124965
+    },
+    "timing_range": {
+      "mean_human": 74.3971004694348,
+      "mean_bot": 8.650354239636625,
+      "std_human": 26.711284458905183,
+      "std_bot": 17.27721956000591,
+      "ks_like": 0.9021694047364515,
+      "effect_size_abs": 2.9228065505422127
+    },
+    "response_latency_ms": {
+      "mean_human": 3083.5923190717494,
+      "mean_bot": 532.3113872171197,
+      "std_human": 1251.428803120093,
+      "std_bot": 699.0775641082857,
+      "ks_like": 0.8843674259380607,
+      "effect_size_abs": 2.517040753185779
+    },
+    "canvas_blocked": {
+      "mean_human": 0.05240635078144381,
+      "mean_bot": 0.43435754189944137,
+      "std_human": 0.22284506990107739,
+      "std_bot": 0.49567233904517655,
+      "ks_like": 0.38195119111799747,
+      "effect_size_abs": 0.9939250763925342
+    },
+    "webgl_blocked": {
+      "mean_human": 0.08298189034978913,
+      "mean_bot": 0.5272981208735399,
+      "std_human": 0.27585484629377954,
+      "std_bot": 0.4992542564633511,
+      "ks_like": 0.4443162305237508,
+      "effect_size_abs": 1.1016186914611887
+    },
+    "touch_claimed": {
+      "mean_human": 0.6056189531133713,
+      "mean_bot": 0.19134078212290503,
+      "std_human": 0.48871733828792635,
+      "std_bot": 0.3933566920995497,
+      "ks_like": 0.4142781709904663,
+      "effect_size_abs": 0.9338858138626277
+    },
+    "ua_length": {
+      "mean_human": 111.56272439792627,
+      "mean_bot": 85.54862185365292,
+      "std_human": 16.649088164196712,
+      "std_bot": 17.185115754763714,
+      "ks_like": 0.5729950741076112,
+      "effect_size_abs": 1.5375469471650003
+    },
+    "token_valid": {
+      "mean_human": 0.9824485239394691,
+      "mean_bot": 0.5304723209751143,
+      "std_human": 0.13131421000267832,
+      "std_bot": 0.49907057382136805,
+      "ks_like": 0.45197620296435487,
+      "effect_size_abs": 1.2386051071170157
+    },
+    "timing_jitter_ratio": {
+      "mean_human": 207.64826787245568,
+      "mean_bot": 24.31081111726024,
+      "std_human": 3126.0984476150597,
+      "std_bot": 413.3698977103316,
+      "ks_like": 0.7574585119211332,
+      "effect_size_abs": 0.08222416726704798
+    },
+    "submission_hour": {
+      "mean_human": 11.534697998181093,
+      "mean_bot": 11.40727205222393,
+      "std_human": 6.924702607872968,
+      "std_bot": 6.918962930124573,
+      "ks_like": 0.010422400595486547,
+      "effect_size_abs": 0.01840927673914362
+    },
+    "webdriver_true": {
+      "mean_human": 0.013830315058298188,
+      "mean_bot": 0.43905535804977147,
+      "std_human": 0.11678628962205452,
+      "std_bot": 0.49627185152651815,
+      "ks_like": 0.42522504299147323,
+      "effect_size_abs": 1.1795326886591662
+    },
+    "automation_globals": {
+      "mean_human": 0.008682709005209625,
+      "mean_bot": 0.49098527171152867,
+      "std_human": 0.0927756410354597,
+      "std_bot": 0.4999187280687583,
+      "ks_like": 0.4823025627063191,
+      "effect_size_abs": 1.3414744556765112
+    },
+    "plugins_empty": {
+      "mean_human": 0.16701810965021086,
+      "mean_bot": 0.712671406805485,
+      "std_human": 0.3729920383856484,
+      "std_bot": 0.45251615742134105,
+      "ks_like": 0.5456532971552741,
+      "effect_size_abs": 1.315889808368201
+    },
+    "languages_missing": {
+      "mean_human": 0.03398660382039196,
+      "mean_bot": 0.5634840020314881,
+      "std_human": 0.18119468695617888,
+      "std_bot": 0.4959534065676594,
+      "ks_like": 0.5294973982110961,
+      "effect_size_abs": 1.4181802499664762
+    },
+    "notif_denied": {
+      "mean_human": 0.18444554701066732,
+      "mean_bot": 0.42762823768410363,
+      "std_human": 0.3878471183322148,
+      "std_bot": 0.4947346036202556,
+      "ks_like": 0.24318269067343634,
+      "effect_size_abs": 0.5470738276821576
+    },
+    "ua_platform_match": {
+      "mean_human": 0.9668196477300918,
+      "mean_bot": 0.5507872016251905,
+      "std_human": 0.17910727649415312,
+      "std_bot": 0.49741397261343817,
+      "ks_like": 0.4160324461049013,
+      "effect_size_abs": 1.1128874202655101
+    },
+    "accept_lang_match": {
+      "mean_human": 0.9567104936740263,
+      "mean_bot": 0.5646267140680549,
+      "std_human": 0.20350804644541007,
+      "std_bot": 0.4958057964856461,
+      "ks_like": 0.3920837796059714,
+      "effect_size_abs": 1.0345994318853282
+    },
+    "tz_consistency": {
+      "mean_human": 0.9266931282560159,
+      "mean_bot": 0.5971305231081767,
+      "std_human": 0.26063954860898453,
+      "std_bot": 0.49047493461004904,
+      "ks_like": 0.3295626051478392,
+      "effect_size_abs": 0.8391243041100008
+    },
+    "device_pixel_valid": {
+      "mean_human": 0.9746961051848176,
+      "mean_bot": 0.6369984763839512,
+      "std_human": 0.15704651451835702,
+      "std_bot": 0.48086527995736594,
+      "ks_like": 0.3376976288008664,
+      "effect_size_abs": 0.9440871496801233
+    }
+  },
+  "warnings_too_easy_features": [
+    "timing_variance"
+  ],
+  "drift_split": "time_bucket",
+  "psi": {
+    "mouse_moved": 8.743225057950563e-05,
+    "mouse_x": 0.0019149441442710517,
+    "mouse_y": 0.0015327575889710447,
+    "mouse_distance": 0.0013296806120798581,
+    "timing_count": 0.001671658555798398,
+    "timing_mean": 0.0023725913101665555,
+    "timing_variance": 0.0007972080793042547,
+    "timing_min": 0.002191067057417185,
+    "timing_max": 0.003688533453544615,
+    "timing_range": 0.0016018195766187538,
+    "response_latency_ms": 0.000954786539177894,
+    "canvas_blocked": 8.024104820981625e-05,
+    "webgl_blocked": 7.834894669526077e-05,
+    "touch_claimed": 0.00013660126515273617,
+    "ua_length": 0.004387524473617236,
+    "token_valid": 0.00035699514052874465,
+    "timing_jitter_ratio": 0.0024575182753922204,
+    "submission_hour": 0.0017642559600744147,
+    "webdriver_true": 0.0005809517541613638,
+    "automation_globals": 5.276852965045813e-11,
+    "plugins_empty": 7.246375099371466e-05,
+    "languages_missing": 3.6249185854811845e-05,
+    "notif_denied": 0.0002665310295025326,
+    "ua_platform_match": 0.00031500336768490775,
+    "accept_lang_match": 4.669523862951673e-07,
+    "tz_consistency": 9.297063059042086e-05,
+    "device_pixel_valid": 6.23682274836507e-07
+  },
+  "psi_max": 0.004387524473617236,
+  "psi_mean": 0.0010655268401413688,
+  "warnings_high_psi_features": [],
+  "label_correlations": {
+    "mouse_moved": -0.3885696423093409,
+    "mouse_x": -0.09838627004880103,
+    "mouse_y": -0.284621187250713,
+    "mouse_distance": -0.19860490699277977,
+    "timing_count": -0.5697418421910396,
+    "timing_mean": -0.686252353632898,
+    "timing_variance": -0.7288793604401901,
+    "timing_min": -0.5258911934231096,
+    "timing_max": -0.7653527283196171,
+    "timing_range": -0.7891497193293205,
+    "response_latency_ms": -0.7362260014279882,
+    "canvas_blocked": 0.46911479468097383,
+    "webgl_blocked": 0.49666576684871333,
+    "touch_claimed": -0.3897631040290117,
+    "ua_length": -0.5874506642502207,
+    "token_valid": -0.5705418936652972,
+    "timing_jitter_ratio": -0.03343536973761471,
+    "submission_hour": -0.008642445333177148,
+    "webdriver_true": 0.5540819572444768,
+    "automation_globals": 0.6072397094668655,
+    "plugins_empty": 0.5385713474262072,
+    "languages_missing": 0.6128302537198249,
+    "notif_denied": 0.2589631879315379,
+    "ua_platform_match": -0.5204011951954355,
+    "accept_lang_match": -0.4878869185885105,
+    "tz_consistency": -0.4015199045808735,
+    "device_pixel_valid": -0.4623933915245466
+  },
+  "warnings_high_label_corr": [],
+  "separability_auc_cv_mean": 0.9745031183055769,
+  "separability_auc_cv_std": 0.0031917022785898416,
+  "status": "pass"
+}

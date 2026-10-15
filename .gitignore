@@ -1,0 +1,23 @@
+# Environment
+.env
+.env.local
+
+# Go build artifacts
+/bot-defense
+/bin/
+*.test
+*.out
+
+# ML artifacts
+ml/rf_model.pkl
+ml/data/*.csv
+ml/__pycache__/
+ml/*.pyc
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
